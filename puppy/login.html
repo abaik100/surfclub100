@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pjs : login page</title>
+    <link rel="stylesheet" href="style_login.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="top_button.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="grid_header">
+        <div class="header_top" >
+            <ul class="top_member_box">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+				<li><a href="mypage.html">마이페이지</a></li>
+                <li><a href="shipping.html">주문/배송</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div><br>
+    </div>
+        <div id="logo">
+            <div class="container_fluid" style="width: 50%; float: left;">
+              <a class="navbar-brand" href="index.html">
+                <img src="logo.jpg" alt="" width="90" height="85" class="d-inline-block align-text-middle">
+                market D
+              </a>
+            </div>
+            <form action="https://search.naver.com/search.naver" method="GET">
+                <div id="form3">
+                <input name="query" type="text" style="width: 100px; float: left;" class="form-control me-2" placeholder="검색어 입력">
+                <button class="btn btn-secondary" type="submit" id="button-addon2"><img src="search.png"></button>
+                </div>
+                </form><br>
+        </div>
+    <div id="grid_menu">
+        <nav class="navbar navbar-expand-md justify-content-center">
+            <ul class="gnb_menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="padding: 0 50px;"><strong>강아지옷</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="padding: 0 50px;"><strong>강아지간식</strong></a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="#" style="padding: 0 50px;"><strong>강아지장난감</strong></a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="#" style="padding: 0 50px;"><strong>커뮤니티</strong></a>
+                </li>
+            </ul>
+        </nav>
+	</div>
+    <div class="tools">
+        <a href="index.html" class="local_home">HOME</a><span> > </span><strong>로그인</strong>
+    </div>
+    <div id="login_page">
+            <div class="login_box">
+                <h2>로그인</h2>
+                <div class="content">
+                    <form>
+                    <div class="text_bar">
+                        <p style="text-align: left; font-size: 20px;">회원 로그인</p>
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form2Example1" class="form-control" style="font-size:13px;" placeholder="이메일 주소"/>
+                        </div>
+                        <div class="form-outline mb-4">
+                          <input type="password" id="form2Example2" class="form-control" style="font-size:13px;" placeholder="패스워드"/>
+                        </div>
+                        <div class="row mb-4">
+                          <div class="col d-flex justify-content-center">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" >
+                              <label class="form-check-label" for="form2Example31"> 아이디 저장 </label>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <a href="#!"><strong>비밀번호 찾기</strong></a>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-secondary">로그인</button>
+
+                        <div style="border-bottom: 2px solid gray;"></div>
+                        <!-- Register buttons -->
+                        <div class="text-center">
+                          <p>아직 회원이 아니신가요? <a href="join.html"><strong>회원가입</strong></a></p>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+</div>
+    <div id="footer" role="contentinfo"> 
+        <div class="footer_inner"> 
+            <div class="partner_box_wrap"> 
+                <div class="partner_box"> 
+                        상호명 : (주)마켓디 /
+                        대표 : 박지선 /
+                        주소 : 부산시 부산진구 중앙대로 708
+                </div> 
+                <div class="partner_box"> 
+                        고객센터 : 1588-0123 /
+                        팩스 : 051-1234-5678 /
+                        이메일 : jisunny94@naver.com /
+                        통신판매업신고번호 : 2022-부산진구-0123
+                </div> 
+                <div class="partner_box"> 
+                        <a href="#" class="link_partner">copyright (c) <strong>marketd.co.kr</strong> all rights reserved.</a> 
+                </div> 
+            </div>
+                <div class="top">
+                    <button onclick="topFunction()" id="myBtn" title="Go to top" class="rounded-pill" style="width:50px; height:50px; text-align:center; ">Top</button>
+                </div> 
+        </div>  
+    </div> 
+</body>
+</html>
