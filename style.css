@@ -2,10 +2,10 @@
   margin-left: 0;
     display: grid;
     grid-template-areas:
-   ' a b '
-   ' a c '
-   ' a e'
-   ' a d ';
+   ' a b b'
+   ' a c f'
+   ' a e e'
+   ' a d d';
   }
 
   
@@ -37,7 +37,7 @@
     align-items: center;
     border: 1px solid #181818;
     font-weight: bold;
-    grid-area: c;
+    grid-area: c f;
     width: 1600px;
     height: 880px;
 
@@ -82,6 +82,29 @@
     grid-area: c;
     width: 1600px;
     height: 600px;
+  
+  }
+
+  .item8 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #181818;
+    font-weight: bold;
+    grid-area: c;
+    width: 800px;
+    height: 880px;
+  
+  }
+  .item9 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #181818;
+    font-weight: bold;
+    grid-area: f;
+    width: 800px;
+    height: 880px;
   
   }
 
