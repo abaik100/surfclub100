@@ -1,0 +1,122 @@
+.container {
+  margin-left: 0;
+    display: grid;
+    grid-template-areas:
+   ' a b b'
+   ' a c f'
+   ' a e e'
+   ' a d d';
+  }
+
+  
+  
+
+  .item1 {
+    display: grid;
+    border: 1px solid #181818;
+    font-size: 1.2rem;
+    font-weight: bold;
+    grid-area: a;
+    width: 200px;
+    height: 1080px;
+  }
+  
+  .item2 {
+    display: grid;
+
+    border: 1px solid #181818;
+    font-weight: bold;
+    grid-area: b;
+    width: 1600px;
+    height: 100px;
+
+  }
+  .item3 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #181818;
+    font-weight: bold;
+    grid-area: c f;
+    width: 1600px;
+    height: 880px;
+
+  }
+  .item4 {
+    display: grid;
+    justify-content: left;
+    align-items: left;
+    border: 1px solid #181818;
+    font-weight: bold;
+    grid-area: d;
+    width: 1600px;
+    height: 100px;
+  }
+
+  .item5 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #181818;
+    font-weight: bold;
+    grid-area: e;
+    width: 1600px;
+    height: 1160px;
+  }
+
+  .item6 {
+    display: grid;
+    border: 1px solid #181818;
+    font-weight: bold;
+    grid-area: a;
+    width: 200px;
+    height: 1960px;
+  }
+
+  .item7 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #181818;
+    font-weight: bold;
+    grid-area: c;
+    width: 1600px;
+    height: 600px;
+  
+  }
+
+  .item8 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #181818;
+    font-weight: bold;
+    grid-area: c;
+    width: 800px;
+    height: 880px;
+  
+  }
+  .item9 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #181818;
+    font-weight: bold;
+    grid-area: f;
+    width: 800px;
+    height: 880px;
+  
+  }
+
+  .top button {
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 100;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+  
+
+  
