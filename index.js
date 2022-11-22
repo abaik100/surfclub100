@@ -45,7 +45,7 @@
  // 지도 출력
 //  function initMap(){
      // 위치데이터 경도, 위도로 구성된 jso 파일은 항상 이런식으로 구성되어있다.
-     var ll = {lat: 38.0579, lng: 128.68};
+     var ll = {lat: 35.1793, lng: 129.1996};
      map = new google.maps.Map(
              document.getElementById("map"),
              {zoom: 17, center: ll}
@@ -55,6 +55,20 @@
              map: map,
              label: "현재 위치"}        
      );
+ var map1;
+     // 지도 출력
+    //  function initMap(){
+         // 위치데이터 경도, 위도로 구성된 jso 파일은 항상 이런식으로 구성되어있다.
+         var ll = {lat: 38.0579, lng: 128.68};
+         map1 = new google.maps.Map(
+                 document.getElementById("map"),
+                 {zoom: 17, center: ll}
+                 );
+         new google.maps.Marker(
+             {position: ll,
+                 map1: map,
+                 label: "현재 위치"}        
+         );
  //}
 //  initMap(); // 맵 생성
  
