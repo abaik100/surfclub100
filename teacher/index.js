@@ -84,7 +84,7 @@ window.onload = function(){
   
   // 날씨 api - 서울 open weather 사이트에 가입하고 자기 api 키 사용하기
   // API_KEY 이 부분에 
-  var apiURI = "https://api.openweathermap.org/data/2.5/weather?lat="+'37.5400456'+"&lon="+"126.9921017"+"&appid="+API_KEY;
+  var apiURI = "https://api.openweathermap.org/data/2.5/weather?lat="+'37.5400456'+"&lon="+"126.9921017"+"&appid="+d45806b4e056c1f0aea6f49d4ff16dc8;
   $.ajax({
     url: apiURI,
     dataType: "json",
@@ -118,7 +118,7 @@ window.onload = function(){
   
   
   // 날씨 api - 부산
-  var apiURI = "https://api.openweathermap.org/data/2.5/weather?lat="+'35.1587053'+"&lon="+"129.1603804"+"&appid="+API_KEY;
+  var apiURI = "https://api.openweathermap.org/data/2.5/weather?lat="+'35.1587053'+"&lon="+"129.1603804"+"&appid="+d45806b4e056c1f0aea6f49d4ff16dc8;
   $.ajax({
     url: apiURI,
     dataType: "json",

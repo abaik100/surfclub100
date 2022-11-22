@@ -75,20 +75,21 @@
 
       <form class="row g-3">
         <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">지역</label>
-          <input type="email" class="form-control" id="" placeholder="송정">
-          <input type="email" class="form-control" id="" placeholder="양양">
-          <button id="btn1">지도 변경2양양</button>
-          <button id="btn2">지도 변경2양양22</button>
-          <input type="email" class="form-control" id="" placeholder="제주">
+
+        <button class="btn btn-secondary dropdown-toggle" type="button"
+            id="dropdownMenuButton1" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            도시 선택
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li  class="dropdown-item" id="seoul" value="seoul" onclick="initMap(this.id); seoulWeather();">송정</li>
+          <li  class="dropdown-item" id="busan" value="busan" onclick="initMap(this.id);busanWeather();">양양</li>
+        </ul>
+          
 
 
         </div>
         <div class="col-12">
-          <label for="inputAddress" class="form-label">school</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="송정 서핑학교">
-          <input type="text" class="form-control" id="inputAddress" placeholder="서프 홀릭">
-          <input type="text" class="form-control" id="inputAddress" placeholder="써피써피">
+
         </div>
 
     </div>
