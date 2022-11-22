@@ -123,7 +123,9 @@
   ]; 
   detailMap(map,malls);
   
-  } else {
+  } 
+  
+  if(self === 'busan'){
     const map = new google.maps.Map(document.getElementById("map"), {
       center: { lat: 38.0321, lng: 128.7085 },
       zoom: 10,
@@ -133,6 +135,21 @@
       { label: "A", name: "서피비치", lat: 38.029, lng: 128.7175 },
       { label: "B", name: "와이키키서프", lat: 38.0584, lng: 128.683},
       { label: "C", name: "양양서프", lat: 38.0066, lng: 128.7302 },
+        ];
+  
+        detailMap(map,malls);
+  }
+  if(self === 'jeju'){
+    const map = new google.maps.Map(document.getElementById("map"), {
+      center: { lat: 33.2513, lng: 126.4158 },
+      zoom: 10,
+    });
+  
+    const malls = [
+      { label: "A", name: "서퍼스서핑스쿨", lat: 33.2535, lng: 126.4231 },
+      { label: "B", name: "코코넛서프", lat: 33.2443, lng: 126.4211},
+      { label: "B", name: "중문서핑스쿨", lat: 33.2502, lng: 126.4129},
+     
         ];
   
         detailMap(map,malls);
