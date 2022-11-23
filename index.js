@@ -198,7 +198,8 @@ var weatherIcon = {
 };
 
 // 날씨 api - 서울
-var apiURI = "http://api.openweathermap.org/data/2.5/weather?q="+'jeju'+"&appid="+"d45806b4e056c1f0aea6f49d4ff16dc8";
+// var apiURI = "http://api.openweathermap.org/data/2.5/weather?q="+'jeju'+"&appid="+"d45806b4e056c1f0aea6f49d4ff16dc8";
+  var apiURI = "https://api.openweathermap.org/data/2.5/weather?lat="+'35.1793'+"&lon="+"128.7085"+"&appid="+"d45806b4e056c1f0aea6f49d4ff16dc8";
 $.ajax({
   url: apiURI,
   dataType: "json",
@@ -211,7 +212,7 @@ $.ajax({
       var $Temp = Math.floor(resp.main.temp- 273.15) + 'º';
       var $humidity = '습도&nbsp;&nbsp;&nbsp;&nbsp;' + resp.main.humidity+ ' %';
       var $wind = '바람&nbsp;&nbsp;&nbsp;&nbsp;' +resp.wind.speed + ' m/s';
-      var $city = '서울';
+      var $city = '송정';
       var $cloud = '구름&nbsp;&nbsp;&nbsp;&nbsp;' + resp.clouds.all +"%";
       var $temp_min = '최저 온도&nbsp;&nbsp;&nbsp;&nbsp;' + Math.floor(resp.main.temp_min- 273.15) + 'º';
       var $temp_max = '최고 온도&nbsp;&nbsp;&nbsp;&nbsp;' + Math.floor(resp.main.temp_max- 273.15) + 'º';
@@ -232,7 +233,7 @@ $.ajax({
 
 // 날씨 api - 경기도
 
-var apiURI = "http://api.openweathermap.org/data/2.5/weather?q="+'jeju'+"&appid="+"d45806b4e056c1f0aea6f49d4ff16dc8";
+var apiURI = "https://api.openweathermap.org/data/2.5/weather?lat="+'38.0321'+"&lon="+"128.70857"+"&appid="+"d45806b4e056c1f0aea6f49d4ff16dc8";
 $.ajax({
   url: apiURI,
   dataType: "json",
@@ -245,7 +246,7 @@ $.ajax({
       var $g_Temp = Math.floor(resp.main.temp- 273.15) + 'º';
       var $g_humidity = '습도&nbsp;&nbsp;&nbsp;&nbsp;' + resp.main.humidity+ ' %';
       var $g_wind = '바람&nbsp;&nbsp;&nbsp;&nbsp;' +resp.wind.speed + ' m/s';
-      var $g_city = '제주';
+      var $g_city = '양양';
       var $g_cloud = '구름&nbsp;&nbsp;&nbsp;&nbsp;' + resp.clouds.all +"%";
       var $g_temp_min = '최저 온도&nbsp;&nbsp;&nbsp;&nbsp;' + Math.floor(resp.main.temp_min- 273.15) + 'º';
       var $g_temp_max = '최고 온도&nbsp;&nbsp;&nbsp;&nbsp;' + Math.floor(resp.main.temp_max- 273.15) + 'º';
