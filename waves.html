@@ -72,30 +72,54 @@
       </nav>
     </div>
     <div class="item8">
+      <div id="seoul_display">
+        <div style="background-color : rgb(101, 178, 255); padding : 40px;color : #fff; height : 500px">
+          <div style="float : left;">
+              <div class="weather_icon"></div>
+          </div><br>
+      
+          <div style="float : right; margin : -5px 0px 0px 60px; font-size : 11pt">
+                  <div class="temp_min"></div>
+                  <div class="temp_max"></div>
+                  <div class="humidity"></div>
+                  <div class="wind"></div>
+                  <div class="cloud"></div>
+          </div>
+          <div style="float : right; margin-top : -45px;">
+              <div class="current_temp" style="font-size : 50pt"></div>
+              <div class="weather_description" style="font-size : 20pt"></div>
+              <div class="city" style="font-size : 13pt"></div>
+          </div>
+      </div>
+      </div>
 
-      <form class="row g-3">
-        <div class="col-md-6">
-
-        <button class="btn btn-secondary dropdown-toggle" type="button"
-            id="dropdownMenuButton1" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            도시 선택
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li  class="dropdown-item" id="seoul" value="seoul" onclick="initMap(this.id); seoulWeather();">송정</li>
-          <li  class="dropdown-item" id="busan" value="busan" onclick="initMap(this.id);busanWeather();">양양</li>
-          <li  class="dropdown-item" id="jeju" value="jeju" onclick="initMap(this.id);busanWeather();">제주</li>
-        </ul>
-          
-
-
-        </div>
-        <div class="col-12">
-
-        </div>
 
     </div>
     </form>
-    <div class="item9", div id="map" style="height: 880px" ></div>
+
+    <div class="item9">
+      <div id="busan_display">
+      <div style="background-color : rgb(101, 255, 178); padding : 40px;color : #fff; height : 500px">
+        <div style="float : left;">
+            <div class="weather_icon"></div>
+        </div><br>
+      
+        <div style="float : right; margin : -5px 0px 0px 60px; font-size : 11pt">
+                <div class="g_temp_min"></div>
+                <div class="g_temp_max"></div>
+                <div class="g_humidity"></div>
+                <div class="g_wind"></div>
+                <div class="g_cloud"></div>
+        </div>
+        <div style="float : right; margin-top : -45px;">
+            <div class="g_current_temp" style="font-size : 50pt"></div>
+            <div class="g_weather_description" style="font-size : 20pt"></div>
+            <div class="g_city" style="font-size : 13pt"></div>
+        </div>
+      </div>
+      </div>
+
+    </div>
       <!-- <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.0187033161164!2d129.2008411156083!3d35.181086380313936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35688c4c0fa9581f%3A0x1a027e4434aaad0f!2z7Iah7KCV7ISc7ZWR7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1668998995866!5m2!1sko!2skr"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
